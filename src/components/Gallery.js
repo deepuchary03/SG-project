@@ -7,9 +7,9 @@ const Gallery = () => {
     <section id="gallery">
       <h2>Gallery</h2>
       <div>
-        <img src={g1} alt="Gallery Image 1" />
-        <img src="image2.jpg" alt="Gallery Image 2" />
-        <img src="image3.jpg" alt="Gallery Image 3" />
+        <img src={g1} alt="Gallery 1" />
+        <img src="image2.jpg" alt="Gallery 2" />
+        <img src="image3.jpg" alt="Gallery 3" />
       </div>
     </section>
   );
