@@ -18,7 +18,16 @@ const Music = () => {
         ></iframe>
         <iframe
           className="music-iframe"
-          src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC?utm_source=generator"
+          src="https://open.spotify.com/embed/track/6wJwkMo278iWVlWl1XQ4WA?utm_source=generator"
+          title="Spotify Track 2"
+          frameBorder="0"
+          allowFullScreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <iframe
+          className="music-iframe"
+          src="https://open.spotify.com/embed/track/4hQ6UGyWQIGJmHSo0J88JW?utm_source=generator"
           title="Spotify Track 2"
           frameBorder="0"
           allowFullScreen=""
