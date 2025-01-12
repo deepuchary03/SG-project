@@ -1,0 +1,42 @@
+.common-background {
+  /* Background image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Fixed background */
+  color: white; /* White text color */
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding around the content */
+}
+
+.music-container,
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between the iframes */
+}
+
+.music-iframe,
+.video-iframe {
+  border-radius: 12px; /* Rounded corners for the iframes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle effect */
+  width: 100%; /* Ensure the iframe takes the full width of the grid cell */
+  height: 352px; /* Set a fixed height for the iframes */
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+  .common-background {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .music-container,
+  .video-container {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px; /* Reduce the space between the iframes */
+  }
+
+  .music-iframe,
+  .video-iframe {
+    height: auto; /* Adjust the height automatically */
+  }
+}

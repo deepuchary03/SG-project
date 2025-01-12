@@ -1,0 +1,85 @@
+.header {
+  position: relative; /* Position relative for absolute children */
+  width: 100%; /* Full width */
+  height: 400px; /* Set a height for the header */
+  overflow: hidden; /* Hide overflow */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+.header-image {
+  position: absolute; /* Position the image absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the image area */
+  z-index: 1; /* Place the image behind the content */
+}
+
+.header-content {
+  position: relative; /* Position relative for stacking */
+  z-index: 2; /* Place content above the image */
+  color: white; /* White text color */
+  text-align: justify; /* Center text */
+  background: rgba(20, 57, 80, 0.7);
+
+  /* Morph transparent background */
+  padding: 20px; /* Padding around the content */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+.header-nav {
+  position: relative; /* Position relative for stacking */
+  z-index: 2; /* Ensure nav is above the image */
+  margin-top: 20px; /* Space above the nav */
+}
+
+.nav-list {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Flexbox for horizontal layout */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-item {
+  margin-left: 20px; /* Space between nav items */
+}
+
+.nav-link {
+  color: white; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1.2rem; /* Font size for links */
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+  .header {
+    height: 300px; /* Adjust height for smaller screens */
+    padding: 10px;
+  }
+
+  .header-title {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Add space below the title */
+  }
+
+  .nav-list {
+    flex-direction: column; /* Stack nav items vertically */
+    width: 100%; /* Make nav list take full width */
+  }
+
+  .nav-item {
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 10px; /* Add space below each nav item */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
